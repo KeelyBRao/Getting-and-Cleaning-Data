@@ -34,5 +34,7 @@ The task begins with reading the data sets under the test and train subfolders. 
 ### Extracts only the measurements on the mean and standard deviation for each measurement. 
 for extracting only the measurements on the mean and standard, the 'feature.txt' file is read into the R enviroment. From the features data, extract the iduces (indMeanStd) of features that have mean() and std() in the name strings. These extracted indices are used for created only mean and stadard deviation. X_Data data frame is updated with the indices obtained from the features list. Finally, the column names for the X_Data are assigned with the names from the feasures list. 
 ### Uses descriptive activity names to name the activities in the data set
+For using the descriptive activity names to name the activities in the data set, the 'activity.txt' file is read into the console. y_Data file is updated with the descriptive names obtained from the activity list.
 ### Appropriately labels the data set with descriptive variable names. 
+Labeling of the data set with descriptive variable names is obtained by combining X_Data, y_Data and subject_Data. A "merged_data.txt" file is created by invoking read.table for the data obtained in this step.
 ### Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
