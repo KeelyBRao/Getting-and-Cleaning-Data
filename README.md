@@ -5,9 +5,9 @@ This File describes how the run_analysis R file can be exceuted for merging test
 ## Before Running the "R" file
 Before running the R file (run_analysis.R), make sure the data is extracted from the file using the weblink https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and un-zip the folders and make the folder in which the data is un-zipped as working directory using setwd() command in R.
 
-## Merging and crating tidy data set
+## Merging and creating tidy data set
 Call the run_analysis.R from the R console. This file was created and tested in RStudio. 
 > The R file takes the data from train and test folders and merges them into one. The merge data is stored under the file name "merge_data.txt".
-
+> After merging the data, the data is used for computing mean values of certain variables as described in the course project website. The R file creates a tidy data file with the name "tidy_data.txt".
 
 
