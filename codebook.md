@@ -38,4 +38,4 @@ For using the descriptive activity names to name the activities in the data set,
 ### Appropriately labels the data set with descriptive variable names. 
 Labeling of the data set with descriptive variable names is obtained by combining X_Data, y_Data and subject_Data. The data frame containing the merged data is called tidydData. A "merged_data.txt" file is created by invoking read.table for the data obtained in this step.
 ### Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-Finally, tidy data sets are created with the average of each variable for each activity and each subject with the merged data set by employing the aggregate command. The data frame "tidyDataFinal" is created with the clean and tidy data set and the same is saved under the file "
+Finally, tidy data sets are created with the average of each variable for each activity and each subject with the merged data set by employing the aggregate command. The data frame "tidyDataFinal" is created with the clean and tidy data set and the same is saved under the file "tidy_data.txt".
