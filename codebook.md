@@ -27,11 +27,12 @@ The data files contains the following files
 
 Objective of the task is to extract the data, merge the data and clean up the data.
 ## R file and Transformation of data
-The run_analysis file performs the tasks of merging and cleaning up of the data. The following sub-tasks are performed in arriving at the tidy data set. The data that are read in to the R environment for merging are obtained from the files: 'X_train/test.txt', 'y_train/test', 'subject_train/test'. The next step is to merge the respctive data sets using the 'rbind' command.
+The run_analysis file performs the tasks of merging and cleaning up of the data. The following sub-tasks are performed in arriving at the tidy data set. 
 
 ### Merges the training and the test sets to create one data set.
-The task begins with reading the data sets under the test and train subfolders. 
+The task begins with reading the data sets under the test and train subfolders. The data that are read in to the R environment for merging are obtained from the files: 'X_train/test.txt', 'y_train/test', 'subject_train/test'. The next step is to merge the respctive data sets using the 'rbind' command. The merged data set are named as: 'X_Data','y_Data',subject_Data'. The data frame created from the merge has a dimension: 10299x561.
 ### Extracts only the measurements on the mean and standard deviation for each measurement. 
+for extracting only the measurements on the mean and standard, the 'feature.txt' file is read into the R enviroment. From the features data, extract the iduces (indMeanStd) of features that have mean() and std() in the name strings. These extracted indices are used for created only mean and stadard deviation. X_Data data frame is updated with the indices obtained from the features list. Finally, the column names for the X_Data are assigned with the names from the feasures list. 
 ### Uses descriptive activity names to name the activities in the data set
 ### Appropriately labels the data set with descriptive variable names. 
 ### Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
